@@ -68,25 +68,116 @@
           />
         </div>
       </header>
-      <section class="mt-[500px]">
+      <section class="mt-[500px] mb-[100px]">
         <div class="container mx-auto">
           <div class="flex flex-row justify-between pb-[5px] border-b-2">
             <p class="text-[30px]">會員管理</p>
             <div class="flex flex-row space-x-2 self-end">
-                <a href="./index.html" class="hover:text-gray-300">首頁</a>
-                <p>/</p>
-                <a href="./mamber_login.html" class="hover:text-gray-300">會員登入</a>
+              <a href="./index.html" class="hover:text-gray-300">首頁</a>
+              <p>/</p>
+              <a href="./mamber_login.html" class="hover:text-gray-300"
+                >會員登入</a
+              >
             </div>
           </div>
           <div class="py-8">
             <div class="flex flex-row justify-center space-x-5">
-                <button class="border-2 px-8 py-2 tracking-widest rounded-md text-orange-600 bg-gray-400 border-orange-600"><a href="">會員登入</a></button>
-                <button class="border-2 px-8 py-2 tracking-widest rounded-md text-gray-300 hover:text-orange-600 hover:bg-gray-400 hover:border-orange-600"><a href="">會員註冊</a></button>
+              <button
+                class="border-2 px-8 py-2 tracking-widest rounded-md text-orange-600 bg-gray-300 border-orange-600"
+              >
+                <a href="">會員登入</a>
+              </button>
+              <button
+                class="border-2 px-8 py-2 tracking-widest rounded-md text-gray-300 hover:text-orange-600 hover:bg-gray-300 hover:border-orange-600"
+              >
+                <a href="">會員註冊</a>
+              </button>
             </div>
           </div>
-          <div></div>
+          <div class="">
+            <form action="" method="post">
+              <div class="flex justify-center mb-8">
+                <input
+                  placeholder="請輸入電子郵件 / 帳號"
+                  maxlength="128"
+                  size="30"
+                  type="text"
+                  name="email"
+                  tabindex="1"
+                  id=""
+                  class="border-2 rounded p-2 w-1/2"
+                />
+              </div>
+              <div class="flex justify-center ">
+                <input
+                  type="password"
+                  name="password"
+                  maxlength="50"
+                  placeholder="請輸入密碼"
+                  autocomplete="off"
+                  tabindex="2"
+                  class="border-2 rounded p-2 w-1/2"
+                />
+              </div>
+              <div class="flex justify-center mt-[30px]">
+                <button
+                  type="button"
+                  class="p-3 border-2 rounded-md text-orange-800 border-orange-600 bg-gray-300 hover:bg-gray-400"
+                >
+                  確 認 送 出
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
+      <footer class="bg-pink-300">
+        <div class="container mx-auto h-[250px] pt-[30px]">
+          <div class="flex flex-row space-x-[200px]">
+            <div class="font-bold text-white space-y-3">
+              <p>美麗國際花店</p>
+              <hr class="w-[350px]" />
+              <div class="">
+                <ul class="space-y-3">
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/address.jpg"
+                      alt=""
+                      class="h-[20px] pl-[3px] pr-[6px]"
+                    />台北市
+                  </li>
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/phone.jpg"
+                      alt=""
+                      class="h-[20px] pr-[3px]"
+                    />02-2222-5555
+                  </li>
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/email.jpg"
+                      alt=""
+                      class="h-[20px] pr-[3px]"
+                    />may12354@gmail.com
+                  </li>
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/opentime.jpg"
+                      alt=""
+                      class="h-[20px] pr-[3px]"
+                    />星期一至星期六 11:00 – 18:00
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="font-bold text-white space-y-3">
+              <p>好友分享</p>
+              <hr class="w-[350px]" />
+            </div>
+          </div>
+          <div class="flex justify-center text-white">Copyright ©2024</div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
