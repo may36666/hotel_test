@@ -1,163 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-</head>
-<script src="https://cdn.tailwindcss.com"></script>
-
-<body>
-  <div id="app">
-    <header class="bg-white absolute top-0 right-0 left-0 z-50">
-      <div class="container mx-auto flex flex-row justify-stretch px-6 py-3 items-baseline">
-        <div class="text-2xl text-red-400/75 mx-[200px]">
-          <a href="./index.html">美麗花店<br />beautiful</a>
-        </div>
-        <div class="mx-3 py-5">
-          <ul class="flex flex-row">
-            <li class="hover:bg-gray-300 px-5">
-              <a href="./index.html">首頁<br />home</a>
-            </li>
-            <li class="hover:bg-gray-300 px-5 group">
-              <a href="#" cla>關於<br />about</a>
-              <ul class="absolute bg-white py-3 px-3 invisible group-hover:visible">
-                <li class="mb-3 pr-10 hover:bg-gray-300">
-                  <a href="">關於我們</a>
-                </li>
-                <li class="hover:bg-gray-300"><a href="">服務範圍</a></li>
-              </ul>
-            </li>
-            <li class="hover:bg-gray-300 px-5">
-              <a href="">購物須知<br />notice</a>
-            </li>
-            <li class="hover:bg-gray-300 px-5">
-              <a href="">常見問題<br />Q&A</a>
-            </li>
-          </ul>
-        </div>
-        <div class="bg-white pl-20">
-          <div class="flex flex-row border-l-2 pl-2">
-            <a href="#" class=""><img src="./image/head.jpg" alt="log" height="20px" width="20px" class="" /></a>
-            <a href="#" class="pl-2"><img src="./image/car.png" alt="log" height="40px" width="30px" class="" /></a>
+  <body>
+    <div id="app">
+      <header class="bg-white absolute top-0 right-0 left-0 z-50">
+        <div
+          class="container mx-auto flex flex-row justify-stretch px-6 py-3 items-baseline"
+        >
+          <div class="text-2xl text-red-400/75 mx-[200px]">
+            <a href="./index.html">美麗花店<br />beautiful</a>
+          </div>
+          <div class="mx-3 py-5">
+            <ul class="flex flex-row">
+              <li class="hover:bg-gray-300 px-5">
+                <a href="./index.html">首頁<br />home</a>
+              </li>
+              <li class="hover:bg-gray-300 px-5 group">
+                <a href="#" cla>關於<br />about</a>
+                <ul
+                  class="absolute bg-white py-3 px-3 invisible group-hover:visible"
+                >
+                  <li class="mb-3 pr-10 hover:bg-gray-300">
+                    <a href="">關於我們</a>
+                  </li>
+                  <li class="hover:bg-gray-300"><a href="">服務範圍</a></li>
+                </ul>
+              </li>
+              <li class="hover:bg-gray-300 px-5">
+                <a href="">購物須知<br />notice</a>
+              </li>
+              <li class="hover:bg-gray-300 px-5">
+                <a href="">常見問題<br />Q&A</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white pl-20">
+            <div class="flex flex-row border-l-2 pl-2">
+              <a href="#" class=""
+                ><img
+                  src="./image/head.jpg"
+                  alt="log"
+                  height="20px"
+                  width="20px"
+                  class=""
+              /></a>
+              <a href="#" class="pl-2"
+                ><img
+                  src="./image/car.png"
+                  alt="log"
+                  height="40px"
+                  width="30px"
+                  class=""
+              /></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="bg-gray-900 h-[350px]">
-        <img src="./image/flower_background.jpg" alt="" class="h-[350px] w-[2200px]" />
-      </div>
-    </header>
-    <section class="mt-[500px] mb-[100px]">
-      <div class="container mx-auto">
-        <div class="flex flex-row justify-between pb-[5px] border-b-2">
-          <p class="text-[30px]">會員管理</p>
-          <div class="flex flex-row space-x-2 self-end">
-            <a href="./index.html" class="hover:text-gray-300">首頁</a>
-            <p>/</p>
-            <a href="./mamber_login.html" class="hover:text-gray-300">會員登入</a>
-          </div>
+        <div class="bg-gray-900 h-[350px]">
+          <img
+            src="./image/flower_background.jpg"
+            alt=""
+            class="h-[350px] w-[2200px]"
+          />
         </div>
-        <div class="py-8">
-          <div class="flex flex-row justify-center space-x-5">
-            <button
-              class="border-2 px-8 py-2 tracking-widest rounded-md text-gray-300 hover:text-orange-600 hover:bg-gray-300 hover:border-orange-600">
-              <a href="">會員登入</a>
-            </button>
-            <button
-              class="border-2 px-8 py-2 tracking-widest rounded-md  text-orange-600 bg-gray-300 border-orange-600">
-              <a href="">會員註冊</a>
-            </button>
+      </header>
+      <section class="mt-[500px] mb-[100px]">
+        <div class="container mx-auto">
+          <div class="flex flex-row justify-between pb-[5px] border-b-2">
+            <p class="text-[30px]">會員管理</p>
+            <div class="flex flex-row space-x-2 self-end">
+              <a href="./index.html" class="hover:text-gray-300">首頁</a>
+              <p>/</p>
+              <a href="./mamber_login.html" class="hover:text-gray-300"
+                >會員登入</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <form action="" method="post">
-            <div class="flex flex-row justify-stretch">
-              <div class="text-[15px] mx-auto">
-                <div class="py-3"><label for="" class="text-[25px]">會員帳號</label>
-                  <div class="py-3 tracking-widest"><input class="rounded border-2 h-[50px] w-[500px] pl-[5px]"
-                      autocomplete="off" type="text" id="email" maxlength="60" placeholder="請輸入E-MAIL" required></div>
+          <div class="py-8">
+            <div class="flex flex-row justify-center space-x-5">
+              <button
+                class="border-2 px-8 py-2 tracking-widest rounded-md text-gray-300 hover:text-orange-600 hover:bg-gray-300 hover:border-orange-600"
+              >
+                <a href="">會員登入</a>
+              </button>
+              <button
+                class="border-2 px-8 py-2 tracking-widest rounded-md text-orange-600 bg-gray-300 border-orange-600"
+              >
+                <a href="">會員註冊</a>
+              </button>
+            </div>
+          </div>
+          <div class="container">
+            <form action="" method="post">
+              <div class="flex flex-row justify-stretch">
+                <div class="text-[15px] mx-auto">
+                  <div class="py-3">
+                    <label for="" class="text-[25px]">會員帳號</label>
+                    <div class="py-3 tracking-widest">
+                      <input
+                        class="rounded border-2 h-[50px] w-[500px] pl-[5px]"
+                        autocomplete="off"
+                        type="text"
+                        id="email"
+                        maxlength="60"
+                        placeholder="請輸入E-MAIL"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <label for="" class="text-[25px]">密碼</label>
+                    <div class="py-3">
+                      <input
+                        class="rounded border-2 h-[50px] w-[500px] pl-[5px] tracking-widest"
+                        autocomplete="off"
+                        type="password"
+                        id="email"
+                        maxlength="50"
+                        size="20"
+                        placeholder="請輸入(6~10個英文或數字半形字元)"
+                        id="password"
+                        value
+                        required
+                      />
+                    </div>
+                    <div class="text-red-500">請記住密碼，並定期更換</div>
+                  </div>
+                  <div class="py-3">
+                    <label for="" class="text-[25px]">密碼確認</label>
+                    <div class="py-3">
+                      <input
+                        class="rounded border-2 h-[50px] w-[500px] pl-[5px] tracking-widest"
+                        autocomplete="off"
+                        type="password"
+                        id="email"
+                        maxlength="50"
+                        size="20"
+                        placeholder="請輸入(6~10個英文或數字半形字元)"
+                        id="passwordChk"
+                        value
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <label for="" class="text-[25px]">中文全名</label>
+                    <div class="py-3 tracking-widest">
+                      <input
+                        class="rounded border-2 h-[50px] w-[500px] pl-[5px]"
+                        autocomplete="off"
+                        type="text"
+                        id="name"
+                        maxlength="20"
+                        size="20"
+                        value
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <label for="" class="text-[25px]">性別</label>
+                    <div class="py-3 tracking-widest">
+                      <label for="">
+                        <input type="radio" name="gender" value="M" checked />
+                        男
+                      </label>
+                      <label for="">
+                        <input type="radio" name="gender" value="W" checked />
+                        女
+                      </label>
+                      <label for="">
+                        <input type="radio" name="gender" value="O" checked />
+                        其他
+                      </label>
+                    </div>
+                  </div>
                 </div>
-                <div class="py-3"><label for="" class="text-[25px]">密碼</label>
-                  <div class="py-3"><input class="rounded border-2 h-[50px] w-[500px] pl-[5px] tracking-widest"
-                      autocomplete="off" type="password" id="email" maxlength="50" size="20"
-                      placeholder="請輸入(6~10個英文或數字半形字元)" id="password" value required></div>
-                  <div class="text-red-500">請記住密碼，並定期更換</div>
-                </div>
-                <div class="py-3"><label for="" class="text-[25px]">密碼確認</label>
-                  <div class="py-3"><input class="rounded border-2 h-[50px] w-[500px] pl-[5px] tracking-widest"
-                      autocomplete="off" type="password" id="email" maxlength="50" size="20"
-                      placeholder="請輸入(6~10個英文或數字半形字元)" id="passwordChk" value required></div>
-                </div>
-                <div class="py-3"><label for="" class="text-[25px]">中文全名</label>
-                  <div class="py-3 tracking-widest"><input class="rounded border-2 h-[50px] w-[500px] pl-[5px]"
-                      autocomplete="off" type="text" id="name" maxlength="20" size="20" value required></div>
-                </div>
-                <div class="py-3"><label for="" class="text-[25px]">性別</label>
-                  <div class="py-3 tracking-widest">
+                <div class="mx-auto">
+                  <div class="py-3">
+                    <label for="" class="text-[25px]">連絡電話 </label>
+                    <div class="py-3 tracking-widest">
+                      <input
+                        class="rounded border-2 h-[50px] w-[500px] pl-[5px]"
+                        autocomplete="off"
+                        type="tel"
+                        id="name"
+                        maxlength="20"
+                        size="20"
+                        placeholder="ex:0912345678"
+                        value
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <label for="" class="text-[25px]">聯絡地址</label>
+                    <div class="flex flex-row">
+                      <div
+                        class="tracking-widest border-2 h-[50px] w-1/2 mr-2 py-2"
+                      >
+                        <select name="city" id="city" class="">
+                          <option value="">選縣市</option>
+                          <option value="基隆市">基隆市</option>
+                          <option value="臺北市">臺北市</option>
+                          <option value="新北市">新北市</option>
+                          <option value="桃園市">桃園市</option>
+                          <option value="新竹市">新竹市</option>
+                          <option value="新竹縣">新竹縣</option>
+                          <option value="苗栗縣">苗栗縣</option>
+                          <option value="臺中市">臺中市</option>
+                          <option value="彰化縣">彰化縣</option>
+                          <option value="南投縣">南投縣</option>
+                          <option value="雲林縣">雲林縣</option>
+                          <option value="嘉義市">嘉義市</option>
+                          <option value="嘉義縣">嘉義縣</option>
+                          <option value="臺南市">臺南市</option>
+                          <option value="高雄市">高雄市</option>
+                          <option value="屏東縣">屏東縣</option>
+                          <option value="臺東縣">臺東縣</option>
+                          <option value="花蓮縣">花蓮縣</option>
+                          <option value="宜蘭縣">宜蘭縣</option>
+                          <option value="澎湖縣">澎湖縣</option>
+                          <option value="金門縣">金門縣</option>
+                          <option value="連江縣">連江縣</option>
+                          <option value="其他">其他</option>
+                        </select>
+                      </div>
+                      <div class="tracking-widest border-2 h-[50px] w-1/2 py-2">
+                        <select name="areaName" id="Area">
+                          <option value="">選地區</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="mt-[10px]">
+                      <textarea
+                        name=""
+                        rows="2"
+                        id="address"
+                        class="border-2 w-[500px] h-[160px] p-2"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <label for="" class="text-[25px]">生日(西元)</label>
+                    <div>
+                      <input
+                        type="date"
+                        name="date"
+                        id="date"
+                        class="rounded border-2 h-[50px] p-2 w-[500px]"
+                      />
+                    </div>
+                  </div>
+                  <div class="py-3">
                     <label for="">
-                      <input type="radio" name="gender" value="M" checked>
-                      男
-                    </label>
-                    <label for="">
-                      <input type="radio" name="gender" value="W" checked>
-                      女
-                    </label>
-                    <label for="">
-                      <input type="radio" name="gender" value="O" checked>
-                      其他
+                      <input type="checkbox" name="memberTerms" >
+                      <span>我已詳閱</span>
+                      <a href="">會員使用條款</a>
+                      <span>內容並同意其條約</span>
                     </label>
                   </div>
                 </div>
               </div>
-              <div class="mx-auto">
-                <div class="py-3"><label for="" class="text-[25px]">連絡電話
-                  </label>
-                  <div class="py-3 tracking-widest"><input class="rounded border-2 h-[50px] w-[500px] pl-[5px]"
-                      autocomplete="off" type="tel" id="name" maxlength="20" size="20" placeholder="ex:0912345678" value
-                      required></div>
-                </div>
-                <div class="py-3">
-
-                </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-pink-400">
+        <div class="container mx-auto h-[250px] pt-[30px]">
+          <div class="flex flex-row space-x-[200px]">
+            <div class="font-bold text-white space-y-3">
+              <p>美麗國際花店</p>
+              <hr class="w-[350px]" />
+              <div class="">
+                <ul class="space-y-3">
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/address.jpg"
+                      alt=""
+                      class="h-[20px] pl-[3px] pr-[6px]"
+                    />台北市
+                  </li>
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/phone.jpg"
+                      alt=""
+                      class="h-[20px] pr-[3px]"
+                    />02-2222-5555
+                  </li>
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/email.jpg"
+                      alt=""
+                      class="h-[20px] pr-[3px]"
+                    />may12354@gmail.com
+                  </li>
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/opentime.jpg"
+                      alt=""
+                      class="h-[20px] pr-[3px]"
+                    />星期一至星期六 11:00 – 18:00
+                  </li>
+                </ul>
               </div>
             </div>
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer class="bg-pink-400">
-      <div class="container mx-auto h-[250px] pt-[30px]">
-        <div class="flex flex-row space-x-[200px]">
-          <div class="font-bold text-white space-y-3">
-            <p>美麗國際花店</p>
-            <hr class="w-[350px]" />
-            <div class="">
-              <ul class="space-y-3">
-                <li class="flex flex-row">
-                  <img src="./image/address.jpg" alt="" class="h-[20px] pl-[3px] pr-[6px]" />台北市
-                </li>
-                <li class="flex flex-row">
-                  <img src="./image/phone.jpg" alt="" class="h-[20px] pr-[3px]" />02-2222-5555
-                </li>
-                <li class="flex flex-row">
-                  <img src="./image/email.jpg" alt="" class="h-[20px] pr-[3px]" />may12354@gmail.com
-                </li>
-                <li class="flex flex-row">
-                  <img src="./image/opentime.jpg" alt="" class="h-[20px] pr-[3px]" />星期一至星期六 11:00 – 18:00
-                </li>
-              </ul>
+            <div class="font-bold text-white space-y-3">
+              <p>好友分享</p>
+              <hr class="w-[350px]" />
             </div>
           </div>
-          <div class="font-bold text-white space-y-3">
-            <p>好友分享</p>
-            <hr class="w-[350px]" />
-          </div>
+          <div class="flex justify-center text-white">Copyright ©2024</div>
         </div>
-        <div class="flex justify-center text-white">Copyright ©2024</div>
-      </div>
-    </footer>
-  </div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>
