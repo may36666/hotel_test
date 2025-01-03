@@ -35,7 +35,7 @@
                 </ul>
               </li>
               <li class="hover:bg-gray-300 px-5">
-                <a href="">購買<br />online</a>
+                <a href="./onlineShop.html">購買<br />online</a>
               </li>
               <li class="hover:bg-gray-300 px-5">
                 <a href="">常見問題<br />Q&A</a>
@@ -128,7 +128,7 @@
               <div class="flex flex-row justify-stretch">
                 <div class="text-[15px] mx-auto">
                   <div class="py-3">
-                    <label for="" class="text-[25px]">會員帳號</label>
+                    <label for="email" class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">會員帳號</label>
                     <div class="py-3 tracking-widest">
                       <input
                         class="rounded border-2 h-[50px] w-[500px] pl-[5px]"
@@ -142,13 +142,13 @@
                     </div>
                   </div>
                   <div class="py-3">
-                    <label for="" class="text-[25px]">密碼</label>
+                    <label for="password" class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">密碼</label>
                     <div class="py-3">
                       <input
                         class="rounded border-2 h-[50px] w-[500px] pl-[5px] tracking-widest"
                         autocomplete="off"
                         type="password"
-                        id="email"
+                        id="password"
                         maxlength="50"
                         size="20"
                         placeholder="請輸入(6~10個英文或數字半形字元)"
@@ -160,13 +160,12 @@
                     <div class="text-red-500">請記住密碼，並定期更換</div>
                   </div>
                   <div class="py-3">
-                    <label for="" class="text-[25px]">密碼確認</label>
+                    <label for="passwordChk" class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">密碼確認</label>
                     <div class="py-3">
                       <input
                         class="rounded border-2 h-[50px] w-[500px] pl-[5px] tracking-widest"
                         autocomplete="off"
                         type="password"
-                        id="email"
                         maxlength="50"
                         size="20"
                         placeholder="請輸入(6~10個英文或數字半形字元)"
@@ -177,7 +176,7 @@
                     </div>
                   </div>
                   <div class="py-3">
-                    <label for="" class="text-[25px]">中文全名</label>
+                    <label for="name" class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">中文全名</label>
                     <div class="py-3 tracking-widest">
                       <input
                         class="rounded border-2 h-[50px] w-[500px] pl-[5px]"
@@ -192,7 +191,7 @@
                     </div>
                   </div>
                   <div class="py-3">
-                    <label for="" class="text-[25px]">性別</label>
+                    <label for="" class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">性別</label>
                     <div class="py-3 tracking-widest">
                       <label for="">
                         <input type="radio" name="gender" value="M" checked />
@@ -211,13 +210,13 @@
                 </div>
                 <div class="mx-auto">
                   <div class="py-3">
-                    <label for="" class="text-[25px]">連絡電話 </label>
+                    <label for="tel" class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">連絡電話 </label>
                     <div class="py-3 tracking-widest">
                       <input
                         class="rounded border-2 h-[50px] w-[500px] pl-[5px]"
                         autocomplete="off"
                         type="tel"
-                        id="name"
+                        id="tel"
                         maxlength="20"
                         size="20"
                         placeholder="ex:0912345678"
@@ -227,12 +226,12 @@
                     </div>
                   </div>
                   <div class="py-3">
-                    <label for="" class="text-[25px]">聯絡地址</label>
+                    <label for="city" class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">聯絡地址</label>
                     <div class="flex flex-row">
                       <div
-                        class="tracking-widest border-2 h-[50px] w-1/2 mr-2 py-2"
+                        class="tracking-widest border-2 h-[50px] w-1/2 mr-2 "
                       >
-                        <select name="city" id="city" class="">
+                        <select name="city" id="city" class="w-full h-full">
                           <option value="">選縣市</option>
                           <option value="基隆市">基隆市</option>
                           <option value="臺北市">臺北市</option>
@@ -259,8 +258,8 @@
                           <option value="其他">其他</option>
                         </select>
                       </div>
-                      <div class="tracking-widest border-2 h-[50px] w-1/2 py-2">
-                        <select name="areaName" id="Area">
+                      <div class="tracking-widest border-2 h-[50px] w-1/2 ">
+                        <select name="areaName" id="Area" class="w-full h-full" >
                           <option value="">選地區</option>
                         </select>
                       </div>
@@ -276,7 +275,7 @@
                     </div>
                   </div>
                   <div class="py-3">
-                    <label for="" class="text-[25px]">生日(西元)</label>
+                    <label for="date" class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">生日(西元)</label>
                     <div>
                       <input
                         type="date"
@@ -290,7 +289,7 @@
                     <label for="">
                       <input type="checkbox" name="memberTerms" />
                       <span>我已詳閱</span>
-                      <a href="">會員使用條款</a>
+                      <a href="#">會員使用條款</a>
                       <span>內容並同意其條約</span>
                     </label>
                   </div>
