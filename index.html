@@ -13,26 +13,26 @@
     <header class="border-b-1 bg-white lg:fixed lg:top-0 lg:right-0 lg:left-0 ">
       <div class="container mx-auto flex flex-row justify-between px-6 py-3 ">
         <nav class="p-3 lg:hidden">
-            <div><label for="switch" class="block before:content-['☰'] before:text-[35px] group"></label></div>
-             <input type="checkbox" id="switch" class="hidden checked:block">
-              <ul class="fixed border-2 top-0 bottom-0 left-0 w-1/3 text-left bg-white hidden  ">
-                <li class="hover:bg-gray-300 px-5 bg-pink-400 border-b-2 py-[10px] ">
-                  <label for="">關閉<br>close</label>
-                </li>
-                <li class="hover:bg-gray-300 px-5 text-gray-400 border-b-2 py-[10px] ">
-                  <a href="./index.html">首頁<br />home</a>
-                </li>
-                <li class="hover:bg-gray-300 px-5 group border-b-2 py-[10px]">
-                  <a href="./about.html">關於<br />about</a>
-                </li>
-                <li class="hover:bg-gray-300 px-5 border-b-2 py-[10px]">
-                  <a href="./onlineShop.html">購買<br />online</a>
-                </li>
-                <li class="hover:bg-gray-300 px-5 border-b-2 py-[10px]">
-                  <a href="">常見問題<br />Q&A</a>
-                </li>
-              </ul>
-            
+          <button type="button" id="toggle">
+            <div class="block before:content-['☰'] before:text-[35px]"></div>
+          </button>
+          <ul class="fixed border-2 top-0 bottom-0 left-0 w-1/3 text-left bg-white hidden" id="switchMenu">
+            <li class="hover:bg-gray-300 px-5 bg-pink-400 border-b-2 py-[10px] ">
+              <button type="button" id="close">關閉 <br>close</button>
+            </li>
+            <li class="hover:bg-gray-300 px-5 text-gray-400 border-b-2 py-[10px] ">
+              <a href="./index.html">首頁<br />home</a>
+            </li>
+            <li class="hover:bg-gray-300 px-5 group border-b-2 py-[10px]">
+              <a href="./about.html">關於<br />about</a>
+            </li>
+            <li class="hover:bg-gray-300 px-5 border-b-2 py-[10px]">
+              <a href="./onlineShop.html">購買<br />online</a>
+            </li>
+            <li class="hover:bg-gray-300 px-5 border-b-2 py-[10px]">
+              <a href="">常見問題<br />Q&A</a>
+            </li>
+          </ul>
         </nav>
 
         <div class="text-[30px] lg:text-2xl text-red-400/75">
@@ -84,348 +84,214 @@
       </a>
       <span class="fixed flex justify-center right-[5px] bottom-[150px] w-[15px] h-[20px]">0</span>
     </div>
-    <!-- <div class="m-0 pt-[91px]"></div>
-      <div class="bg-gray-900 h-[500px] border-4"> <img src="image/flower_background.jpg" class="w-full h-[500px]"></div>
-      <section>
-        <div class="container mx-auto">
-          <div class="py-2">
-            <p class="text-orange-500/50 px-[600px] text-[50px] font-serif">
-              PRODUCT
-            </p>
-            <p class="px-[690px] text-[30px]">產品</p>
-          </div>
-          <div class="grid grid-cols-4 gap-6">
-            <div class="h-[300px]">
-              <div class="border-2 h-[205px]">
-                <a href="./ProductDetail.html" class="flex justify-center"
-                  ><img
-                    src="./image/prunus_mumejpg.jpg"
-                    alt=""
-                    width="90%"
-                    class="h-[200px] hover:w-[95%]"
-                /></a>
-              </div>
-              <div
-                class="pt-[10px] grid gap-4 grid-cols-2 place-content-between"
-              >
-                <p class="">梅花</p>
-                <a href="./ProductDetail.html" class="justify-self-end"
-                  ><img
-                    src="./image/car.png"
-                    alt=""
-                    class="h-[30px] hover:text-red-700"
-                /></a>
-                <div class="">$10</div>
-              </div>
+    <div class="mt-[91px]"></div>
+    <div class="bg-gray-900  border-4"> <img src="image/flower_background.jpg" class="w-full h-[200px] lg:h-[500px]">
+    </div>
+    <section>
+      <div class="container mx-auto">
+        <div class="py-2 text-center">
+          <p class="text-orange-500/50  text-[50px] font-serif">
+            PRODUCT
+          </p>
+          <p class=" text-[30px]">產品</p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-6">
+          <div class="h-[300px]">
+            <div class="border-2 h-[205px]">
+              <a href="./ProductDetail.html" class="flex justify-center"><img src="./image/prunus_mumejpg.jpg" alt=""
+                  width="90%" class="h-[200px] hover:w-[95%]" /></a>
             </div>
-            <div class="h-[300px]">
-              <div class="border-2 h-[205px]">
-                <a href="#" class="flex justify-center"
-                  ><img
-                    src="./image/prunus_mumejpg.jpg"
-                    alt=""
-                    width="90%"
-                    class="h-[200px] hover:w-[95%]"
-                /></a>
-              </div>
-              <div
-                class="pt-[10px] grid gap-4 grid-cols-2 place-content-between"
-              >
-                <p class="">梅花</p>
-                <a href="" class="justify-self-end"
-                  ><img
-                    src="./image/car.png"
-                    alt=""
-                    class="h-[30px] hover:text-red-700"
-                /></a>
-                <div class="">$10</div>
-              </div>
-            </div>
-            <div class="h-[300px]">
-              <div class="border-2 h-[205px]">
-                <a href="#" class="flex justify-center"
-                  ><img
-                    src="./image/prunus_mumejpg.jpg"
-                    alt=""
-                    width="90%"
-                    class="h-[200px] hover:w-[95%]"
-                /></a>
-              </div>
-              <div
-                class="pt-[10px] grid gap-4 grid-cols-2 place-content-between"
-              >
-                <p class="">梅花</p>
-                <a href="" class="justify-self-end"
-                  ><img
-                    src="./image/car.png"
-                    alt=""
-                    class="h-[30px] hover:text-red-700"
-                /></a>
-                <div class="">$10</div>
-              </div>
-            </div>
-            <div class="h-[300px]">
-              <div class="border-2 h-[205px]">
-                <a href="#" class="flex justify-center"
-                  ><img
-                    src="./image/prunus_mumejpg.jpg"
-                    alt=""
-                    width="90%"
-                    class="h-[200px] hover:w-[95%]"
-                /></a>
-              </div>
-              <div
-                class="pt-[10px] grid gap-4 grid-cols-2 place-content-between"
-              >
-                <p class="">梅花</p>
-                <a href="" class="justify-self-end"
-                  ><img
-                    src="./image/car.png"
-                    alt=""
-                    class="h-[30px] hover:text-red-700"
-                /></a>
-                <div class="">$10</div>
-              </div>
+            <div class="pt-[10px] grid gap-4 grid-cols-2 place-content-between">
+              <p class="">梅花</p>
+              <a href="./ProductDetail.html" class="justify-self-end"><img src="./image/car.png" alt=""
+                  class="h-[30px] hover:text-red-700" /></a>
+              <div class="">$10</div>
             </div>
           </div>
-          <div class="grid grid-cols-4 gap-6">
-            <div class="h-[300px]">
-              <div class="border-2 h-[205px]">
-                <a href="#" class="flex justify-center"
-                  ><img
-                    src="./image/prunus_mumejpg.jpg"
-                    alt=""
-                    width="90%"
-                    class="h-[200px] hover:w-[95%]"
-                /></a>
-              </div>
-              <div
-                class="pt-[10px] grid gap-4 grid-cols-2 place-content-between"
-              >
-                <p class="">梅花</p>
-                <a href="" class="justify-self-end"
-                  ><img
-                    src="./image/car.png"
-                    alt=""
-                    class="h-[30px] hover:text-red-700"
-                /></a>
-                <div class="">$10</div>
-              </div>
+          <div class="h-[300px]">
+            <div class="border-2 h-[205px]">
+              <a href="#" class="flex justify-center"><img src="./image/prunus_mumejpg.jpg" alt="" width="90%"
+                  class="h-[200px] hover:w-[95%]" /></a>
             </div>
-            <div class="h-[300px]">
-              <div class="border-2 h-[205px]">
-                <a href="#" class="flex justify-center"
-                  ><img
-                    src="./image/prunus_mumejpg.jpg"
-                    alt=""
-                    width="90%"
-                    class="h-[200px] hover:w-[95%]"
-                /></a>
-              </div>
-              <div
-                class="pt-[10px] grid gap-4 grid-cols-2 place-content-between"
-              >
-                <p class="">梅花</p>
-                <a href="" class="justify-self-end"
-                  ><img
-                    src="./image/car.png"
-                    alt=""
-                    class="h-[30px] hover:text-red-700"
-                /></a>
-                <div class="">$10</div>
-              </div>
-            </div>
-            <div class="h-[300px]">
-              <div class="border-2 h-[205px]">
-                <a href="#" class="flex justify-center"
-                  ><img
-                    src="./image/prunus_mumejpg.jpg"
-                    alt=""
-                    width="90%"
-                    class="h-[200px] hover:w-[95%]"
-                /></a>
-              </div>
-              <div
-                class="pt-[10px] grid gap-4 grid-cols-2 place-content-between"
-              >
-                <p class="">梅花</p>
-                <a href="" class="justify-self-end"
-                  ><img
-                    src="./image/car.png"
-                    alt=""
-                    class="h-[30px] hover:text-red-700"
-                /></a>
-                <div class="">$10</div>
-              </div>
-            </div>
-            <div class="h-[300px]">
-              <div class="border-2 h-[205px]">
-                <a href="#" class="flex justify-center"
-                  ><img
-                    src="./image/prunus_mumejpg.jpg"
-                    alt=""
-                    width="90%"
-                    class="h-[200px] hover:w-[95%]"
-                /></a>
-              </div>
-              <div
-                class="pt-[10px] grid gap-4 grid-cols-2 place-content-between"
-              >
-                <p class="">梅花</p>
-                <a href="" class="justify-self-end"
-                  ><img
-                    src="./image/car.png"
-                    alt=""
-                    class="h-[30px] hover:text-red-700"
-                /></a>
-                <div class="">$10</div>
-              </div>
+            <div class="pt-[10px] grid gap-4 grid-cols-2 place-content-between">
+              <p class="">梅花</p>
+              <a href="" class="justify-self-end"><img src="./image/car.png" alt=""
+                  class="h-[30px] hover:text-red-700" /></a>
+              <div class="">$10</div>
             </div>
           </div>
-          <div class="grid grid-cols-4 gap-6">
-            <div class="h-[300px]">
-              <div class="border-2 h-[205px]">
-                <a href="#" class="flex justify-center"
-                  ><img
-                    src="./image/prunus_mumejpg.jpg"
-                    alt=""
-                    width="90%"
-                    class="h-[200px] hover:w-[95%]"
-                /></a>
-              </div>
-              <div
-                class="pt-[10px] grid gap-4 grid-cols-2 place-content-between"
-              >
-                <p class="">梅花</p>
-                <a href="" class="justify-self-end"
-                  ><img
-                    src="./image/car.png"
-                    alt=""
-                    class="h-[30px] hover:text-red-700"
-                /></a>
-                <div class="">$10</div>
-              </div>
+          <div class="h-[300px]">
+            <div class="border-2 h-[205px]">
+              <a href="#" class="flex justify-center"><img src="./image/prunus_mumejpg.jpg" alt="" width="90%"
+                  class="h-[200px] hover:w-[95%]" /></a>
             </div>
-            <div class="h-[300px]">
-              <div class="border-2 h-[205px]">
-                <a href="#" class="flex justify-center"
-                  ><img
-                    src="./image/prunus_mumejpg.jpg"
-                    alt=""
-                    width="90%"
-                    class="h-[200px] hover:w-[95%]"
-                /></a>
-              </div>
-              <div
-                class="pt-[10px] grid gap-4 grid-cols-2 place-content-between"
-              >
-                <p class="">梅花</p>
-                <a href="" class="justify-self-end"
-                  ><img
-                    src="./image/car.png"
-                    alt=""
-                    class="h-[30px] hover:text-red-700"
-                /></a>
-                <div class="">$10</div>
-              </div>
+            <div class="pt-[10px] grid gap-4 grid-cols-2 place-content-between">
+              <p class="">梅花</p>
+              <a href="" class="justify-self-end"><img src="./image/car.png" alt=""
+                  class="h-[30px] hover:text-red-700" /></a>
+              <div class="">$10</div>
             </div>
-            <div class="h-[300px]">
-              <div class="border-2 h-[205px]">
-                <a href="#" class="flex justify-center"
-                  ><img
-                    src="./image/prunus_mumejpg.jpg"
-                    alt=""
-                    width="90%"
-                    class="h-[200px] hover:w-[95%]"
-                /></a>
-              </div>
-              <div
-                class="pt-[10px] grid gap-4 grid-cols-2 place-content-between"
-              >
-                <p class="">梅花</p>
-                <a href="" class="justify-self-end"
-                  ><img
-                    src="./image/car.png"
-                    alt=""
-                    class="h-[30px] hover:text-red-700"
-                /></a>
-                <div class="">$10</div>
-              </div>
+          </div>
+          <div class="h-[300px]">
+            <div class="border-2 h-[205px]">
+              <a href="#" class="flex justify-center"><img src="./image/prunus_mumejpg.jpg" alt="" width="90%"
+                  class="h-[200px] hover:w-[95%]" /></a>
             </div>
-            <div class="h-[300px]">
-              <div class="border-2 h-[205px]">
-                <a href="#" class="flex justify-center"
-                  ><img
-                    src="./image/prunus_mumejpg.jpg"
-                    alt=""
-                    width="90%"
-                    class="h-[200px] hover:w-[95%]"
-                /></a>
-              </div>
-              <div
-                class="pt-[10px] grid gap-4 grid-cols-2 place-content-between"
-              >
-                <p class="">梅花</p>
-                <a href="" class="justify-self-end"
-                  ><img
-                    src="./image/car.png"
-                    alt=""
-                    class="h-[30px] hover:text-red-700"
-                /></a>
-                <div class="">$10</div>
-              </div>
+            <div class="pt-[10px] grid gap-4 grid-cols-2 place-content-between">
+              <p class="">梅花</p>
+              <a href="" class="justify-self-end"><img src="./image/car.png" alt=""
+                  class="h-[30px] hover:text-red-700" /></a>
+              <div class="">$10</div>
             </div>
           </div>
         </div>
-      </section>
-      <footer class="bg-pink-400">
-        <div class="container mx-auto h-[250px] pt-[30px]">
-          <div class="flex flex-row space-x-[200px]">
-            <div class="font-bold text-white space-y-3">
-              <p>美麗國際花店</p>
-              <hr class="w-[350px]" />
-              <div class="">
-                <ul class="space-y-3">
-                  <li class="flex flex-row">
-                    <img
-                      src="./image/address.jpg"
-                      alt=""
-                      class="h-[20px] pl-[3px] pr-[6px]"
-                    />台北市
-                  </li>
-                  <li class="flex flex-row">
-                    <img
-                      src="./image/phone.jpg"
-                      alt=""
-                      class="h-[20px] pr-[3px]"
-                    />02-2222-5555
-                  </li>
-                  <li class="flex flex-row">
-                    <img
-                      src="./image/email.jpg"
-                      alt=""
-                      class="h-[20px] pr-[3px]"
-                    />may12354@gmail.com
-                  </li>
-                  <li class="flex flex-row">
-                    <img
-                      src="./image/opentime.jpg"
-                      alt=""
-                      class="h-[20px] pr-[3px]"
-                    />星期一至星期六 11:00 – 18:00
-                  </li>
-                </ul>
-              </div>
+        <div class="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-6">
+          <div class="h-[300px]">
+            <div class="border-2 h-[205px]">
+              <a href="#" class="flex justify-center"><img src="./image/prunus_mumejpg.jpg" alt="" width="90%"
+                  class="h-[200px] hover:w-[95%]" /></a>
             </div>
-            <div class="font-bold text-white space-y-3">
-              <p>好友分享</p>
-              <hr class="w-[350px]" />
+            <div class="pt-[10px] grid gap-4 grid-cols-2 place-content-between">
+              <p class="">梅花</p>
+              <a href="" class="justify-self-end"><img src="./image/car.png" alt=""
+                  class="h-[30px] hover:text-red-700" /></a>
+              <div class="">$10</div>
             </div>
           </div>
-          <div class="flex justify-center text-white">Copyright ©2024</div>
+          <div class="h-[300px]">
+            <div class="border-2 h-[205px]">
+              <a href="#" class="flex justify-center"><img src="./image/prunus_mumejpg.jpg" alt="" width="90%"
+                  class="h-[200px] hover:w-[95%]" /></a>
+            </div>
+            <div class="pt-[10px] grid gap-4 grid-cols-2 place-content-between">
+              <p class="">梅花</p>
+              <a href="" class="justify-self-end"><img src="./image/car.png" alt=""
+                  class="h-[30px] hover:text-red-700" /></a>
+              <div class="">$10</div>
+            </div>
+          </div>
+          <div class="h-[300px]">
+            <div class="border-2 h-[205px]">
+              <a href="#" class="flex justify-center"><img src="./image/prunus_mumejpg.jpg" alt="" width="90%"
+                  class="h-[200px] hover:w-[95%]" /></a>
+            </div>
+            <div class="pt-[10px] grid gap-4 grid-cols-2 place-content-between">
+              <p class="">梅花</p>
+              <a href="" class="justify-self-end"><img src="./image/car.png" alt=""
+                  class="h-[30px] hover:text-red-700" /></a>
+              <div class="">$10</div>
+            </div>
+          </div>
+          <div class="h-[300px]">
+            <div class="border-2 h-[205px]">
+              <a href="#" class="flex justify-center"><img src="./image/prunus_mumejpg.jpg" alt="" width="90%"
+                  class="h-[200px] hover:w-[95%]" /></a>
+            </div>
+            <div class="pt-[10px] grid gap-4 grid-cols-2 place-content-between">
+              <p class="">梅花</p>
+              <a href="" class="justify-self-end"><img src="./image/car.png" alt=""
+                  class="h-[30px] hover:text-red-700" /></a>
+              <div class="">$10</div>
+            </div>
+          </div>
         </div>
-      </footer> -->
+        <div class="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-6">
+          <div class="h-[300px]">
+            <div class="border-2 h-[205px]">
+              <a href="#" class="flex justify-center"><img src="./image/prunus_mumejpg.jpg" alt="" width="90%"
+                  class="h-[200px] hover:w-[95%]" /></a>
+            </div>
+            <div class="pt-[10px] grid gap-4 grid-cols-2 place-content-between">
+              <p class="">梅花</p>
+              <a href="" class="justify-self-end"><img src="./image/car.png" alt=""
+                  class="h-[30px] hover:text-red-700" /></a>
+              <div class="">$10</div>
+            </div>
+          </div>
+          <div class="h-[300px]">
+            <div class="border-2 h-[205px]">
+              <a href="#" class="flex justify-center"><img src="./image/prunus_mumejpg.jpg" alt="" width="90%"
+                  class="h-[200px] hover:w-[95%]" /></a>
+            </div>
+            <div class="pt-[10px] grid gap-4 grid-cols-2 place-content-between">
+              <p class="">梅花</p>
+              <a href="" class="justify-self-end"><img src="./image/car.png" alt=""
+                  class="h-[30px] hover:text-red-700" /></a>
+              <div class="">$10</div>
+            </div>
+          </div>
+          <div class="h-[300px]">
+            <div class="border-2 h-[205px]">
+              <a href="#" class="flex justify-center"><img src="./image/prunus_mumejpg.jpg" alt="" width="90%"
+                  class="h-[200px] hover:w-[95%]" /></a>
+            </div>
+            <div class="pt-[10px] grid gap-4 grid-cols-2 place-content-between">
+              <p class="">梅花</p>
+              <a href="" class="justify-self-end"><img src="./image/car.png" alt=""
+                  class="h-[30px] hover:text-red-700" /></a>
+              <div class="">$10</div>
+            </div>
+          </div>
+          <div class="h-[300px]">
+            <div class="border-2 h-[205px]">
+              <a href="#" class="flex justify-center"><img src="./image/prunus_mumejpg.jpg" alt="" width="90%"
+                  class="h-[200px] hover:w-[95%]" /></a>
+            </div>
+            <div class="pt-[10px] grid gap-4 grid-cols-2 place-content-between">
+              <p class="">梅花</p>
+              <a href="" class="justify-self-end"><img src="./image/car.png" alt=""
+                  class="h-[30px] hover:text-red-700" /></a>
+              <div class="">$10</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-pink-400">
+      <div class="container mx-auto lg:h-[260px] pt-[30px]">
+        <div class="flex flex-col md:flex-row w-full">
+          <div class="font-bold text-white w-1/2 mx-3">
+            <p>美麗國際花店</p>
+            <hr class="w-1/2 my-2" />
+            <div class="">
+              <ul class="space-y-3">
+                <li class="flex flex-row">
+                  <img src="./image/address.jpg" alt="" class="h-[20px] pl-[3px] pr-[6px]" />台北市
+                </li>
+                <li class="flex flex-row">
+                  <img src="./image/phone.jpg" alt="" class="h-[20px] pr-[3px]" />02-2222-5555
+                </li>
+                <li class="flex flex-row">
+                  <img src="./image/email.jpg" alt="" class="h-[20px] pr-[3px]" />may12354@gmail.com
+                </li>
+                <li class="flex flex-row">
+                  <img src="./image/opentime.jpg" alt="" class="h-[20px] pr-[3px]" />星期一至星期六 11:00 – 18:00
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="font-bold text-white w-1/2 mx-3 ">
+            <p>好友分享</p>
+            <hr class="w-1/2 my-2" />
+          </div>
+        </div>
+        <div class="text-center text-white ">Copyright ©2024</div>
+      </div>
+    </footer>
   </div>
+  <script>
+    let menuToggle = document.getElementById("toggle");
+    let switchMenu = document.getElementById("switchMenu");
+    let closeMenu = document.getElementById("close")
+
+    menuToggle.addEventListener("click", () => {
+      switchMenu.classList.toggle("hidden");
+    });
+    closeMenu.addEventListener("click", () => {
+      switchMenu.classList.toggle("hidden");
+    });
+
+  </script>
 </body>
 
 </html>
