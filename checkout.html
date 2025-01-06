@@ -1,273 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beautiful 美麗花店</title>
+  </head>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>beautiful 美麗花店</title>
-</head>
-<script src="https://cdn.tailwindcss.com"></script>
+  <body>
+    <div id="app">
+      <header
+        class="border-b-1 bg-white lg:fixed lg:top-0 lg:right-0 lg:left-0"
+      >
+        <div class="container mx-auto flex flex-row justify-between px-6 py-3">
+          <nav class="p-3 lg:hidden">
+            <button type="button" id="toggle">
+              <div class="block before:content-['☰'] before:text-[35px]"></div>
+            </button>
+            <ul
+              class="fixed border-2 top-0 bottom-0 left-0 w-1/3 text-left bg-white hidden"
+              id="switchMenu"
+            >
+              <li
+                class="hover:bg-gray-300 px-5 bg-pink-400 border-b-2 py-[10px]"
+              >
+                <button type="button" id="close" class="w-full block">關閉 <br />close</button>
+              </li>
+              <li
+                class="hover:bg-gray-300 px-5 border-b-2 py-[10px]"
+              >
+                <a href="./index.html" class="w-full block">首頁<br />home</a>
+              </li>
+              <li class="hover:bg-gray-300 px-5 group border-b-2 py-[10px]">
+                <a href="./about.html" class="w-full block">關於<br />about</a>
+              </li>
+              <li class="hover:bg-gray-300 px-5 border-b-2 py-[10px]">
+                <a href="./onlineShop.html" class="w-full block">購買<br />online</a>
+              </li>
+              <li class="hover:bg-gray-300 px-5 border-b-2 py-[10px]">
+                <a href="" class="w-full block">常見問題<br />Q&A</a>
+              </li>
+            </ul>
+          </nav>
 
-<body>
-  <div id="app">
-    <header class="border-b-1 bg-white lg:fixed lg:top-0 lg:right-0 lg:left-0 ">
-      <div class="container mx-auto flex flex-row justify-between px-6 py-3 ">
-        <nav class="p-3 lg:hidden">
-          <button type="button" id="toggle">
-            <div class="block before:content-['☰'] before:text-[35px]"></div>
-          </button>
-          <ul class="fixed border-2 top-0 bottom-0 left-0 w-1/3 text-left bg-white hidden" id="switchMenu">
-            <li class="hover:bg-gray-300 px-5 bg-pink-400 border-b-2 py-[10px] ">
-              <button type="button" id="close">關閉 <br>close</button>
-            </li>
-            <li class="hover:bg-gray-300 px-5 text-gray-400 border-b-2 py-[10px] ">
-              <a href="./index.html">首頁<br />home</a>
-            </li>
-            <li class="hover:bg-gray-300 px-5 group border-b-2 py-[10px]">
-              <a href="./about.html">關於<br />about</a>
-            </li>
-            <li class="hover:bg-gray-300 px-5 border-b-2 py-[10px]">
-              <a href="./onlineShop.html">購買<br />online</a>
-            </li>
-            <li class="hover:bg-gray-300 px-5 border-b-2 py-[10px]">
-              <a href="">常見問題<br />Q&A</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="text-[30px] lg:text-2xl text-red-400/75">
-          <a href="./index.html">美麗花店<br />beautiful</a>
-        </div>
-        <nav class="hidden mx-3 py-5 lg:block">
-          <ul class="flex flex-row">
-            <li class="hover:bg-gray-300 px-5 text-gray-400">
-              <a href="./index.html">首頁<br />home</a>
-            </li>
-            <li class="hover:bg-gray-300 px-5 group">
-              <a href="./about.html">關於<br />about</a>
-              <ul class="absolute bg-white py-3 px-3 invisible group-hover:visible">
-                <li class="mb-3 pr-10 hover:bg-gray-300">
-                  <a href="./about.html">關於我們</a>
-                </li>
-                <li class="hover:bg-gray-300">
-                  <a href="./scope.html">服務範圍</a>
-                </li>
-              </ul>
-            </li>
-            <li class="hover:bg-gray-300 px-5">
-              <a href="./onlineShop.html">購買<br />online</a>
-            </li>
-            <li class="hover:bg-gray-300 px-5">
-              <a href="">常見問題<br />Q&A</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="bg-white mt-[40px] lg:pl-20 lg:mt-[25px] ">
-          <div class="flex flex-row  lg:border-l-2 lg:pl-2">
-            <a href="./mamber_login.html" class=""><img src="./image/head.jpg" alt="log" height="20px" width="20px"
-                class="" /></a>
-            <a href="./shop.html" class="lg:pl-2"><img src="./image/car.png" alt="log" height="40px" width="30px"
-                class="" /></a>
+          <div class="text-[30px] lg:text-2xl text-red-400/75">
+            <a href="./index.html" class="w-full block">美麗花店<br />beautiful</a>
+          </div>
+          <nav class="hidden mx-3 py-5 lg:block">
+            <ul class="flex flex-row">
+              <li class="hover:bg-gray-300 mx-5">
+                <a href="./index.html" class="w-full block px-5">首頁<br />home</a>
+              </li>
+              <li class="hover:bg-gray-300 mx-5 group">
+                <a href="./about.html" class="w-full block px-5">關於<br />about</a>
+                <ul
+                  class="absolute bg-white py-3 px-3 invisible group-hover:visible"
+                >
+                  <li class="mb-3 pr-10 hover:bg-gray-300">
+                    <a href="./about.html" class="w-full block px-5">關於我們</a>
+                  </li>
+                  <li class="hover:bg-gray-300">
+                    <a href="./scope.html" class="w-full block px-5">服務範圍</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="hover:bg-gray-300 mx-5">
+                <a href="./onlineShop.html" class="w-full block px-5">購買<br />online</a>
+              </li>
+              <li class="hover:bg-gray-300 mx-5">
+                <a href="" class="w-full block px-5">常見問題<br />Q&A</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="bg-white mt-[40px] lg:pl-20 lg:mt-[25px]">
+            <div class="flex flex-row lg:border-l-2 lg:pl-2">
+              <a href="./mamber_login.html" class=""
+                ><img
+                  src="./image/head.jpg"
+                  alt="log"
+                  height="20px"
+                  width="20px"
+                  class="hover:opacity-50"
+              /></a>
+              <a href="./shop.html" class="lg:pl-2"
+                ><img
+                  src="./image/car.png"
+                  alt="log"
+                  height="40px"
+                  width="30px"
+                  class="hover:opacity-50"
+              /></a>
+            </div>
           </div>
         </div>
+      </header>
+      <div class="bg-gray-900 h-[350px]">
+        <img
+          src="./image/flower_background.jpg"
+          alt=""
+          class="h-[350px] w-full"
+        />
       </div>
-    </header>
-    <div class="bg-gray-900 h-[350px]">
-      <img src="./image/flower_background.jpg" alt="" class="h-[350px] w-full" />
-    </div>
-    <div>
-      <a href="./shop.html">
-        <div class="fixed right-[15px] bottom-[100px] bg-pink-700 w-[60px] h-[60px] rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-8 mx-auto mt-3">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-          </svg>
-        </div>
-      </a>
-      <span class="fixed flex justify-center right-[5px] bottom-[150px] w-[15px] h-[20px]">0</span>
-    </div>
+      <div>
+        <a href="./shop.html">
+          <div
+            class="fixed right-[15px] bottom-[100px] bg-pink-700 w-[60px] h-[60px] rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-8 mx-auto mt-3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </div>
+        </a>
+        <span
+          class="fixed flex justify-center right-[5px] bottom-[150px] w-[15px] h-[20px]"
+          >0</span
+        >
+      </div>
 
-    <section class="mt-[60px] mb-[100px] mx-[20px]">
-      <div class="container mx-auto">
-        <div class="pt-[50px] w-full">
-          <div class="flex justify-self-end">
-            <a href="./index.html" class="mr-[10px] hover:text-gray-300">首頁</a>
-            /
-            <a href="#" class="ml-[10px] hover:text-gray-300">購物車清單</a>
-          </div>
-          <hr />
-          <div class="py-5 text-[25px] pl-2">購物清單</div>
-          <div class="py-2 border-b-2 border-t-2 border-dotted">
-            <div class="flex justify-center">目前購物車內暫無商品</div>
-          </div>
-          <div class="mt-5 bg-pink-200 border-t-[2px]">
-            <div class="p-2 flex justify-self-end">
-              商品金額小計:<span class="">0</span>
+      <section class="mt-[60px] mb-[100px] mx-[20px]">
+        <div class="container mx-auto">
+          <div class="pt-[50px] w-full">
+            <div class="flex justify-self-end">
+              <a href="./index.html" class="mr-[10px] hover:text-gray-300"
+                >首頁</a
+              >
+              /
+              <a href="#" class="ml-[10px] hover:text-gray-300">購物車清單</a>
             </div>
-          </div>
-          <div class="bg-pink-200 border-t-[2px]">
-            <div class="p-2 flex justify-self-end">
-              折扣碼:<span>-0</span>
+            <hr />
+            <div class="py-5 text-[25px] pl-2">購物清單</div>
+            <div class="py-2 border-b-2 border-t-2 border-dotted">
+              <div class="flex justify-center">目前購物車內暫無商品</div>
             </div>
-          </div>
-          <div class="bg-pink-200 border-t-[2px]">
-            <div class="p-2 flex justify-self-end">
-              運費小計:<span>0</span>
+            <div class="mt-5 bg-pink-200 border-t-[2px]">
+              <div class="p-2 flex justify-self-end">
+                商品金額小計:<span class="">0</span>
+              </div>
             </div>
-          </div>
-          <div class="bg-pink-200 border-t-[2px]">
-            <div class="p-2 flex justify-self-end">總計:<span>0</span></div>
-          </div>
-          <div class="flex mt-5 py-5 border-b-2 border-t-2 border-dotted">
-            <div class="w-1/2">付款方式</div>
-            <div class="w-1/2">
-              <select name="" id="" class="w-full rounded-md border-2 p-2">
-                <option value="0">請選擇付款方式</option>
-                <option value="1">
-                  上午10:00-12:00配送(非營業時間台北地區)
-                </option>
-                <option value="2">
-                  上午10:00-12:00配送(非營業時間新北地區、士林、北投)
-                </option>
-                <option value="3">門市自取</option>
-              </select>
+            <div class="bg-pink-200 border-t-[2px]">
+              <div class="p-2 flex justify-self-end">
+                折扣碼:<span>-0</span>
+              </div>
             </div>
-          </div>
-          <div class="flex mt-1 py-5 border-b-2 border-t-2 border-dotted">
-            <div class="w-1/2">折扣碼</div>
-            <div class="w-1/2">
-              <input type="text" name="" id="" placeholder="折扣碼" class=" w-full p-3 rounded-md border-2"/>
+            <div class="bg-pink-200 border-t-[2px]">
+              <div class="p-2 flex justify-self-end">
+                運費小計:<span>0</span>
+              </div>
             </div>
-          </div>
-          <div class="flex flex-col lg:flex-row lg:space-x-5 mt-5">
-            <div class="lg:w-1/2 border-2">
-              <form action="" method="post">
-                <h2 class="text-[25px] flex justify-center py-[10px]">
-                  -- 訂購人資訊 --
-                </h2>
-                <div class="mx-8 my-4 ">
-                  <div class="flex flex-row items-end justify-between my-2">
-                    <label for="" class="text-[25px]">中文全名</label>
-                    <div>
-                      <label for=""><input type="radio" name="buyerSex" id="" />先生</label>
-                      <label for=""><input type="radio" name="buyerSex" id="" />小姐</label>
+            <div class="bg-pink-200 border-t-[2px]">
+              <div class="p-2 flex justify-self-end">總計:<span>0</span></div>
+            </div>
+            <div class="flex mt-5 py-5 border-b-2 border-t-2 border-dotted">
+              <div class="w-1/2">付款方式</div>
+              <div class="w-1/2">
+                <select name="" id="" class="w-full rounded-md border-2 p-2">
+                  <option value="0">請選擇付款方式</option>
+                  <option value="1">
+                    上午10:00-12:00配送(非營業時間台北地區)
+                  </option>
+                  <option value="2">
+                    上午10:00-12:00配送(非營業時間新北地區、士林、北投)
+                  </option>
+                  <option value="3">門市自取</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex mt-1 py-5 border-b-2 border-t-2 border-dotted">
+              <div class="w-1/2">折扣碼</div>
+              <div class="w-1/2">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="折扣碼"
+                  class="w-full p-3 rounded-md border-2"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row lg:space-x-5 mt-5">
+              <div class="lg:w-1/2 border-2">
+                <form action="" method="post">
+                  <h2 class="text-[25px] flex justify-center py-[10px]">
+                    -- 訂購人資訊 --
+                  </h2>
+                  <div class="mx-8 my-4">
+                    <div class="flex flex-row items-end justify-between my-2">
+                      <label for="" class="text-[25px]">中文全名</label>
+                      <div>
+                        <label for=""
+                          ><input
+                            type="radio"
+                            name="buyerSex"
+                            id=""
+                          />先生</label
+                        >
+                        <label for=""
+                          ><input
+                            type="radio"
+                            name="buyerSex"
+                            id=""
+                          />小姐</label
+                        >
+                      </div>
                     </div>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="p-2 border-2 rounded-md w-full h-[45px]"
+                    />
                   </div>
-                  <input type="text" name="" id="" class="p-2 border-2 rounded-md w-full h-[45px]" />
-                </div>
-                <div class="mx-8 my-2">
-                  <label for="" class="text-[25px]">連絡電話</label>
-                  <input type="tel" name="buyPhone" id="" class="p-2 border-2 rounded-md w-full h-[45px]" />
-                  <div class="my-2 text-red-600">只能輸入數字</div>
-                </div>
-                <div class="mx-8 my-4">
-                  <label for="" class="text-[25px]">E-Mail</label>
-                  <input type="email" name="buyEmail" id="" class="p-2 border-2 rounded-md w-full h-[45px]" />
-                </div>
-                <div class="mx-8 my-4">
-                  <label for="" class="text-[25px]">聯絡地址</label>
-                  <textarea name="buyAddr" id="" class="p-2 border-2 rounded-md w-full h-[100px]"
-                    rows="3"></textarea>
-                </div>
-                <div class="mx-8 my-4">
-                  <label for="" class="text-[25px]">備註</label>
-                  <textarea name="buyMemo" id="" class="p-2 border-2 rounded-md w-full h-[70px]" rows="3"></textarea>
-                </div>
-              </form>
-            </div>
-            <div class="mt-[10px] lg:w-1/2 lg:mt-0">
-              <form action="" method="post" class="border-2">
-                <h2 class="text-[25px] flex justify-center py-[10px]">
-                  -- 收件人資訊 --
-                </h2>
-                <div class="mx-8 my-4 text-red-600">
-                  <label for="">
-                    <input type="checkbox" class="mr-[5px]" />收件人同訂購人資訊
-                  </label>
-                </div>
-                <div class="mx-8 my-4">
-                  <div class="flex flex-row items-end justify-between my-2">
-                    <label for="" class="text-[25px]">中文全名</label>
-                    <div>
-                      <label for=""><input type="radio" name="buyerSex" id="" />先生</label>
-                      <label for=""><input type="radio" name="buyerSex" id="" />小姐</label>
+                  <div class="mx-8 my-2">
+                    <label for="" class="text-[25px]">連絡電話</label>
+                    <input
+                      type="tel"
+                      name="buyPhone"
+                      id=""
+                      class="p-2 border-2 rounded-md w-full h-[45px]"
+                    />
+                    <div class="my-2 text-red-600">只能輸入數字</div>
+                  </div>
+                  <div class="mx-8 my-4">
+                    <label for="" class="text-[25px]">E-Mail</label>
+                    <input
+                      type="email"
+                      name="buyEmail"
+                      id=""
+                      class="p-2 border-2 rounded-md w-full h-[45px]"
+                    />
+                  </div>
+                  <div class="mx-8 my-4">
+                    <label for="" class="text-[25px]">聯絡地址</label>
+                    <textarea
+                      name="buyAddr"
+                      id=""
+                      class="p-2 border-2 rounded-md w-full h-[100px]"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="mx-8 my-4">
+                    <label for="" class="text-[25px]">備註</label>
+                    <textarea
+                      name="buyMemo"
+                      id=""
+                      class="p-2 border-2 rounded-md w-full h-[70px]"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="mt-[10px] lg:w-1/2 lg:mt-0">
+                <form action="" method="post" class="border-2">
+                  <h2 class="text-[25px] flex justify-center py-[10px]">
+                    -- 收件人資訊 --
+                  </h2>
+                  <div class="mx-8 my-4 text-red-600">
+                    <label for="">
+                      <input
+                        type="checkbox"
+                        class="mr-[5px]"
+                      />收件人同訂購人資訊
+                    </label>
+                  </div>
+                  <div class="mx-8 my-4">
+                    <div class="flex flex-row items-end justify-between my-2">
+                      <label for="" class="text-[25px]">中文全名</label>
+                      <div>
+                        <label for=""
+                          ><input
+                            type="radio"
+                            name="buyerSex"
+                            id=""
+                          />先生</label
+                        >
+                        <label for=""
+                          ><input
+                            type="radio"
+                            name="buyerSex"
+                            id=""
+                          />小姐</label
+                        >
+                      </div>
                     </div>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="p-2 border-2 rounded-md w-full h-[45px]"
+                    />
                   </div>
-                  <input type="text" name="" id="" class="p-2 border-2 rounded-md w-full h-[45px]" />
-                </div>
-                <div class="mx-8 my-2">
-                  <label for="" class="text-[25px]">連絡電話</label>
-                  <input type="tel" name="buyPhone" id="" class="p-2 border-2 rounded-md w-full h-[45px]" />
-                  <div class="my-2 text-red-600">只能輸入數字</div>
-                </div>
-                <div class="mx-8 my-4 pb-[230px]">
-                  <label for="" class="text-[25px]">聯絡地址</label>
-                  <textarea name="buyAddr" id="" class="p-2 border-2 rounded-md w-full h-[100px]"
-                    rows="3"></textarea>
-                </div>
-              </form>
+                  <div class="mx-8 my-2">
+                    <label for="" class="text-[25px]">連絡電話</label>
+                    <input
+                      type="tel"
+                      name="buyPhone"
+                      id=""
+                      class="p-2 border-2 rounded-md w-full h-[45px]"
+                    />
+                    <div class="my-2 text-red-600">只能輸入數字</div>
+                  </div>
+                  <div class="mx-8 my-4 pb-[230px]">
+                    <label for="" class="text-[25px]">聯絡地址</label>
+                    <textarea
+                      name="buyAddr"
+                      id=""
+                      class="p-2 border-2 rounded-md w-full h-[100px]"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
+          <div class="mt-[40px] flex justify-center">
+            <label for="">
+              <input
+                type="checkbox"
+                name=""
+                id=""
+              />我同意註冊成為會員及同意會員條款
+            </label>
+          </div>
+          <div class="mt-[30px] flex justify-center">
+            <a
+              href="./index.html"
+              class="border-1 p-3 px-6 mr-[20px] rounded-md border-orange-600 opacity-50 bg-gray-300 hover:bg-gray-400 hover:opacity-100"
+              >回上一頁</a
+            >
+            <a
+              href="./index.html"
+              class="border-1 p-3 px-6 rounded-md border-orange-600 bg-gray-300 hover:bg-gray-400"
+              >繼續購物</a
+            >
+          </div>
         </div>
-        <div class="mt-[40px] flex justify-center">
-          <label for="">
-            <input type="checkbox" name="" id="" />我同意註冊成為會員及同意會員條款
-          </label>
-        </div>
-        <div class="mt-[30px] flex justify-center">
-          <a href="./index.html"
-            class="border-1 p-3 px-6 mr-[20px] rounded-md border-orange-600 opacity-50 bg-gray-300 hover:bg-gray-400 hover:opacity-100">回上一頁</a>
-          <a href="./index.html"
-            class="border-1 p-3 px-6 rounded-md border-orange-600 bg-gray-300 hover:bg-gray-400">繼續購物</a>
-        </div>
-      </div>
-    </section>
-    <footer class="bg-pink-400">
-      <div class="container mx-auto lg:h-[260px] pt-[30px]">
-        <div class="flex flex-col md:flex-row w-full">
-          <div class="font-bold text-white w-1/2 mx-3">
-            <p>美麗國際花店</p>
-            <hr class="w-1/2 my-2" />
-            <div class="">
-              <ul class="space-y-3">
-                <li class="flex flex-row">
-                  <img src="./image/address.jpg" alt="" class="h-[20px] pl-[3px] pr-[6px]" />台北市
-                </li>
-                <li class="flex flex-row">
-                  <img src="./image/phone.jpg" alt="" class="h-[20px] pr-[3px]" />02-2222-5555
-                </li>
-                <li class="flex flex-row">
-                  <img src="./image/email.jpg" alt="" class="h-[20px] pr-[3px]" />may12354@gmail.com
-                </li>
-                <li class="flex flex-row">
-                  <img src="./image/opentime.jpg" alt="" class="h-[20px] pr-[3px]" />星期一至星期六 11:00 – 18:00
-                </li>
-              </ul>
+      </section>
+      <footer class="bg-pink-400">
+        <div class="container mx-auto lg:h-[260px] pt-[30px]">
+          <div class="flex flex-col md:flex-row w-full">
+            <div class="font-bold text-white w-1/2 mx-3">
+              <p>美麗國際花店</p>
+              <hr class="w-1/2 my-2" />
+              <div class="">
+                <ul class="space-y-3">
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/address.jpg"
+                      alt=""
+                      class="h-[20px] pl-[3px] pr-[6px]"
+                    />台北市
+                  </li>
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/phone.jpg"
+                      alt=""
+                      class="h-[20px] pr-[3px]"
+                    />02-2222-5555
+                  </li>
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/email.jpg"
+                      alt=""
+                      class="h-[20px] pr-[3px]"
+                    />may12354@gmail.com
+                  </li>
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/opentime.jpg"
+                      alt=""
+                      class="h-[20px] pr-[3px]"
+                    />星期一至星期六 11:00 – 18:00
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="font-bold text-white w-1/2 mx-3">
+              <p>好友分享</p>
+              <hr class="w-1/2 my-2" />
             </div>
           </div>
-          <div class="font-bold text-white w-1/2 mx-3 ">
-            <p>好友分享</p>
-            <hr class="w-1/2 my-2" />
-          </div>
+          <div class="text-center text-white">Copyright ©2024</div>
         </div>
-        <div class="text-center text-white ">Copyright ©2024</div>
-      </div>
-    </footer>
-  </div>
-  <script>
-    let menuToggle = document.getElementById("toggle");
-    let switchMenu = document.getElementById("switchMenu");
-    let closeMenu = document.getElementById("close")
+      </footer>
+    </div>
+    <script>
+      let menuToggle = document.getElementById("toggle");
+      let switchMenu = document.getElementById("switchMenu");
+      let closeMenu = document.getElementById("close");
 
-    menuToggle.addEventListener("click", () => {
-      switchMenu.classList.toggle("hidden");
-    });
-    closeMenu.addEventListener("click", () => {
-      switchMenu.classList.toggle("hidden");
-    });
-
-  </script>
-</body>
-
+      menuToggle.addEventListener("click", () => {
+        switchMenu.classList.toggle("hidden");
+      });
+      closeMenu.addEventListener("click", () => {
+        switchMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
