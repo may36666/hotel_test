@@ -87,9 +87,10 @@
       </a>
       <span class="fixed flex justify-center right-[5px] bottom-[150px] w-[15px] h-[20px]">0</span>
     </div>
-    <section class="mt-[60px] mb-[100px] mx-[50px]">
+
+    <section class="mt-[60px] mb-[100px] mx-[20px]">
       <div class="container mx-auto">
-        <div class="pt-[50px]">
+        <div class="pt-[50px] w-full">
           <div class="flex justify-self-end">
             <a href="./index.html" class="mr-[10px] hover:text-gray-300">首頁</a>
             /
@@ -121,7 +122,7 @@
           <div class="flex mt-5 py-5 border-b-2 border-t-2 border-dotted">
             <div class="w-1/2">付款方式</div>
             <div class="w-1/2">
-              <select name="" id="" class="w-[750px] rounded-md border-2 p-2">
+              <select name="" id="" class="w-full rounded-md border-2 p-2">
                 <option value="0">請選擇付款方式</option>
                 <option value="1">
                   上午10:00-12:00配送(非營業時間台北地區)
@@ -135,17 +136,17 @@
           </div>
           <div class="flex mt-1 py-5 border-b-2 border-t-2 border-dotted">
             <div class="w-1/2">折扣碼</div>
-            <div class="w-1/2 flex justify-self-end ml-[1000px]">
-              <input type="text" name="" id="" placeholder="折扣碼" class="p-3 rounded-md border-2" />
+            <div class="w-1/2">
+              <input type="text" name="" id="" placeholder="折扣碼" class=" w-full p-3 rounded-md border-2"/>
             </div>
           </div>
-          <div class="flex flex-row space-x-5 mt-5">
-            <div class="w-1/2 border-2">
+          <div class="flex flex-col lg:flex-row lg:space-x-5 mt-5">
+            <div class="lg:w-1/2 border-2">
               <form action="" method="post">
                 <h2 class="text-[25px] flex justify-center py-[10px]">
                   -- 訂購人資訊 --
                 </h2>
-                <div class="mx-8 my-4">
+                <div class="mx-8 my-4 ">
                   <div class="flex flex-row items-end justify-between my-2">
                     <label for="" class="text-[25px]">中文全名</label>
                     <div>
@@ -153,29 +154,29 @@
                       <label for=""><input type="radio" name="buyerSex" id="" />小姐</label>
                     </div>
                   </div>
-                  <input type="text" name="" id="" class="p-2 border-2 rounded-md w-[650px] h-[45px]" />
+                  <input type="text" name="" id="" class="p-2 border-2 rounded-md w-full h-[45px]" />
                 </div>
                 <div class="mx-8 my-2">
                   <label for="" class="text-[25px]">連絡電話</label>
-                  <input type="tel" name="buyPhone" id="" class="p-2 border-2 rounded-md w-[650px] h-[45px]" />
+                  <input type="tel" name="buyPhone" id="" class="p-2 border-2 rounded-md w-full h-[45px]" />
                   <div class="my-2 text-red-600">只能輸入數字</div>
                 </div>
                 <div class="mx-8 my-4">
                   <label for="" class="text-[25px]">E-Mail</label>
-                  <input type="email" name="buyEmail" id="" class="p-2 border-2 rounded-md w-[650px] h-[45px]" />
+                  <input type="email" name="buyEmail" id="" class="p-2 border-2 rounded-md w-full h-[45px]" />
                 </div>
                 <div class="mx-8 my-4">
                   <label for="" class="text-[25px]">聯絡地址</label>
-                  <textarea name="buyAddr" id="" class="p-2 border-2 rounded-md w-[650px] h-[100px]"
+                  <textarea name="buyAddr" id="" class="p-2 border-2 rounded-md w-full h-[100px]"
                     rows="3"></textarea>
                 </div>
                 <div class="mx-8 my-4">
                   <label for="" class="text-[25px]">備註</label>
-                  <textarea name="buyMemo" id="" class="p-2 border-2 rounded-md w-[650px] h-[70px]" rows="3"></textarea>
+                  <textarea name="buyMemo" id="" class="p-2 border-2 rounded-md w-full h-[70px]" rows="3"></textarea>
                 </div>
               </form>
             </div>
-            <div class="w-1/2">
+            <div class="mt-[10px] lg:w-1/2 lg:mt-0">
               <form action="" method="post" class="border-2">
                 <h2 class="text-[25px] flex justify-center py-[10px]">
                   -- 收件人資訊 --
@@ -193,16 +194,16 @@
                       <label for=""><input type="radio" name="buyerSex" id="" />小姐</label>
                     </div>
                   </div>
-                  <input type="text" name="" id="" class="p-2 border-2 rounded-md w-[650px] h-[45px]" />
+                  <input type="text" name="" id="" class="p-2 border-2 rounded-md w-full h-[45px]" />
                 </div>
                 <div class="mx-8 my-2">
                   <label for="" class="text-[25px]">連絡電話</label>
-                  <input type="tel" name="buyPhone" id="" class="p-2 border-2 rounded-md w-[650px] h-[45px]" />
+                  <input type="tel" name="buyPhone" id="" class="p-2 border-2 rounded-md w-full h-[45px]" />
                   <div class="my-2 text-red-600">只能輸入數字</div>
                 </div>
                 <div class="mx-8 my-4 pb-[230px]">
                   <label for="" class="text-[25px]">聯絡地址</label>
-                  <textarea name="buyAddr" id="" class="p-2 border-2 rounded-md w-[650px] h-[100px]"
+                  <textarea name="buyAddr" id="" class="p-2 border-2 rounded-md w-full h-[100px]"
                     rows="3"></textarea>
                 </div>
               </form>
@@ -216,7 +217,7 @@
         </div>
         <div class="mt-[30px] flex justify-center">
           <a href="./index.html"
-            class="border-1 p-3 px-6 mr-[20px] rounded-md border-orange-600 bg-gray-300 hover:bg-gray-400">回上一頁</a>
+            class="border-1 p-3 px-6 mr-[20px] rounded-md border-orange-600 opacity-50 bg-gray-300 hover:bg-gray-400 hover:opacity-100">回上一頁</a>
           <a href="./index.html"
             class="border-1 p-3 px-6 rounded-md border-orange-600 bg-gray-300 hover:bg-gray-400">繼續購物</a>
         </div>

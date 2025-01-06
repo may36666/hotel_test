@@ -1,183 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購買</title>
+  </head>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>購買</title>
-</head>
-<script src="https://cdn.tailwindcss.com"></script>
+  <body>
+    <div id="app">
+      <header
+        class="border-b-1 bg-white lg:fixed lg:top-0 lg:right-0 lg:left-0"
+      >
+        <div class="container mx-auto flex flex-row justify-between px-6 py-3">
+          <nav class="p-3 lg:hidden">
+            <button type="button" id="toggle">
+              <div class="block before:content-['☰'] before:text-[35px]"></div>
+            </button>
+            <ul
+              class="fixed border-2 top-0 bottom-0 left-0 w-1/3 text-left bg-white hidden"
+              id="switchMenu"
+            >
+              <li
+                class="hover:bg-gray-300 px-5 bg-pink-400 border-b-2 py-[10px]"
+              >
+                <button type="button" id="close">關閉 <br />close</button>
+              </li>
+              <li
+                class="hover:bg-gray-300 px-5 text-gray-400 border-b-2 py-[10px]"
+              >
+                <a href="./index.html">首頁<br />home</a>
+              </li>
+              <li class="hover:bg-gray-300 px-5 group border-b-2 py-[10px]">
+                <a href="./about.html">關於<br />about</a>
+              </li>
+              <li class="hover:bg-gray-300 px-5 border-b-2 py-[10px]">
+                <a href="./onlineShop.html">購買<br />online</a>
+              </li>
+              <li class="hover:bg-gray-300 px-5 border-b-2 py-[10px]">
+                <a href="">常見問題<br />Q&A</a>
+              </li>
+            </ul>
+          </nav>
 
-<body>
-  <div id="app">
-    <header class="border-b-1 bg-white lg:fixed lg:top-0 lg:right-0 lg:left-0 ">
-      <div class="container mx-auto flex flex-row justify-between px-6 py-3 ">
-        <nav class="p-3 lg:hidden">
-          <button type="button" id="toggle">
-            <div class="block before:content-['☰'] before:text-[35px]"></div>
-          </button>
-          <ul class="fixed border-2 top-0 bottom-0 left-0 w-1/3 text-left bg-white hidden" id="switchMenu">
-            <li class="hover:bg-gray-300 px-5 bg-pink-400 border-b-2 py-[10px] ">
-              <button type="button" id="close">關閉 <br>close</button>
-            </li>
-            <li class="hover:bg-gray-300 px-5 text-gray-400 border-b-2 py-[10px] ">
-              <a href="./index.html">首頁<br />home</a>
-            </li>
-            <li class="hover:bg-gray-300 px-5 group border-b-2 py-[10px]">
-              <a href="./about.html">關於<br />about</a>
-            </li>
-            <li class="hover:bg-gray-300 px-5 border-b-2 py-[10px]">
-              <a href="./onlineShop.html">購買<br />online</a>
-            </li>
-            <li class="hover:bg-gray-300 px-5 border-b-2 py-[10px]">
-              <a href="">常見問題<br />Q&A</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="text-[30px] lg:text-2xl text-red-400/75">
-          <a href="./index.html">美麗花店<br />beautiful</a>
-        </div>
-        <nav class="hidden mx-3 py-5 lg:block">
-          <ul class="flex flex-row">
-            <li class="hover:bg-gray-300 px-5 text-gray-400">
-              <a href="./index.html">首頁<br />home</a>
-            </li>
-            <li class="hover:bg-gray-300 px-5 group">
-              <a href="./about.html">關於<br />about</a>
-              <ul class="absolute bg-white py-3 px-3 invisible group-hover:visible">
-                <li class="mb-3 pr-10 hover:bg-gray-300">
-                  <a href="./about.html">關於我們</a>
-                </li>
-                <li class="hover:bg-gray-300">
-                  <a href="./scope.html">服務範圍</a>
-                </li>
-              </ul>
-            </li>
-            <li class="hover:bg-gray-300 px-5">
-              <a href="./onlineShop.html">購買<br />online</a>
-            </li>
-            <li class="hover:bg-gray-300 px-5">
-              <a href="">常見問題<br />Q&A</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="bg-white mt-[40px] lg:pl-20 lg:mt-[25px] ">
-          <div class="flex flex-row  lg:border-l-2 lg:pl-2">
-            <a href="./mamber_login.html" class=""><img src="./image/head.jpg" alt="log" height="20px" width="20px"
-                class="" /></a>
-            <a href="./shop.html" class="lg:pl-2"><img src="./image/car.png" alt="log" height="40px" width="30px"
-                class="" /></a>
+          <div class="text-[30px] lg:text-2xl text-red-400/75">
+            <a href="./index.html">美麗花店<br />beautiful</a>
+          </div>
+          <nav class="hidden mx-3 py-5 lg:block">
+            <ul class="flex flex-row">
+              <li class="hover:bg-gray-300 px-5 text-gray-400">
+                <a href="./index.html">首頁<br />home</a>
+              </li>
+              <li class="hover:bg-gray-300 px-5 group">
+                <a href="./about.html">關於<br />about</a>
+                <ul
+                  class="absolute bg-white py-3 px-3 invisible group-hover:visible"
+                >
+                  <li class="mb-3 pr-10 hover:bg-gray-300">
+                    <a href="./about.html">關於我們</a>
+                  </li>
+                  <li class="hover:bg-gray-300">
+                    <a href="./scope.html">服務範圍</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="hover:bg-gray-300 px-5">
+                <a href="./onlineShop.html">購買<br />online</a>
+              </li>
+              <li class="hover:bg-gray-300 px-5">
+                <a href="">常見問題<br />Q&A</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="bg-white mt-[40px] lg:pl-20 lg:mt-[25px]">
+            <div class="flex flex-row lg:border-l-2 lg:pl-2">
+              <a href="./mamber_login.html" class=""
+                ><img
+                  src="./image/head.jpg"
+                  alt="log"
+                  height="20px"
+                  width="20px"
+                  class=""
+              /></a>
+              <a href="./shop.html" class="lg:pl-2"
+                ><img
+                  src="./image/car.png"
+                  alt="log"
+                  height="40px"
+                  width="30px"
+                  class=""
+              /></a>
+            </div>
           </div>
         </div>
+      </header>
+      <div class="bg-gray-900 h-[350px]">
+        <img
+          src="./image/flower_background.jpg"
+          alt=""
+          class="h-[350px] w-full"
+        />
       </div>
-    </header>
-    <div class="bg-gray-900 h-[350px]">
-      <img src="./image/flower_background.jpg" alt="" class="h-[350px] w-full" />
-    </div>
-    <div>
-      <a href="./shop.html">
-        <div class="fixed right-[15px] bottom-[100px] bg-pink-700 w-[60px] h-[60px] rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-8 mx-auto mt-3">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-          </svg>
-        </div>
-      </a>
-      <span class="fixed flex justify-center right-[5px] bottom-[150px] w-[15px] h-[20px]">0</span>
-    </div>
-    <section class="mt-[60px] mb-[100px]">
-      <div class="container mx-auto">
-        <div class="flex flex-row">
-          <aside class="text-[25px] w-1/3">
-            購買商品
-            <hr class="mt-[5px] w-[400px]" />
-            <div class="mt-[20px]">
-              <ul class="text-[20px]">
-                <li class="pt-5 w-full">
-                  <a href="./onlineShop.html" class="border-2 border-gray-600 p-[10px] pr-[300px] hover:bg-pink-300">
-                    花朵商品</a>
-                </li>
-                <li class="pt-10">
-                  <a href="./onlineShopFlowerBasket.html"
-                    class="border-2 border-gray-600 p-[10px] pr-[300px] hover:bg-pink-300">花籃商品</a>
-                </li>
-              </ul>
-            </div>
-          </aside>
-          <div class="w-2/3">
-            <div class="flex flex-row">
-              <div class="h-[500px] w-[500px] border-2">
-                <img src="./image/prunus_mumejpg.jpg" class="h-full" />
+      <div>
+        <a href="./shop.html">
+          <div
+            class="fixed right-[15px] bottom-[100px] bg-pink-700 w-[60px] h-[60px] rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-8 mx-auto mt-3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </div>
+        </a>
+        <span
+          class="fixed flex justify-center right-[5px] bottom-[150px] w-[15px] h-[20px]"
+          >0</span
+        >
+      </div>
+      <section class="mt-[60px] mb-[100px] mx-[20px]">
+        <div class="container mx-auto">
+          <div class="flex flex-col lg:flex-row">
+            <aside class="hidden lg:block text-[25px] w-1/4 lg:mr-[30px]">
+              購買商品
+              <hr class="mt-[5px] w-full" />
+              <div class="mt-[20px]">
+                <ul class="space-y-5">
+                  <li class="">
+                    <a
+                      href="./onlineShop.html"
+                      class="border-2 border-gray-600 block w-full p-2 hover:bg-pink-300"
+                    >
+                      花朵商品</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      href="./onlineShopFlowerBasket.html"
+                      class="border-2 border-gray-600 block w-full p-2 hover:bg-pink-300"
+                      >花籃商品</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <div class="ml-[100px]">
-                <div class="text-[25px] font-bold">梅花</div>
-                <div class="text-[20px] mt-[20px] border-b-2 pb-[20px]">
-                  疏影橫斜水清淺，暗香浮動月黃昏。
+            </aside>
+            <div class="lg:w-2/3 float-left">
+              <div class="relative lg:hidden">
+                <div
+                  class="flex mb-3 bg-pink-300 h-[50px] items-center justify-between"
+                  id="onlineShopToggle"
+                >
+                  <span class="text-center grow">購買商品</span>
+                  <span
+                    class="before:content-['▼'] before:text-[20px] mr-2"
+                  ></span>
                 </div>
-                <div class="text-[40px] text-red-600 p-3">$10</div>
-                <div class="mt-[20px]">購買數量</div>
-                <div class="mt-[10px]">
-                  <span><button type="button" class="w-[45px] h-[40px] border-[2px] border-r-[0px] rounded-md">
-                      <i class="before:content-['-'] before:text-black-500 mt-5"></i></button></span>
-                  <input type="number" value="1" data-max="100"
-                    class="border-2 mx-[-8px] p-[6px] pl-[15px] font-bold" />
-                  <span><button type="button" class="w-[45px] h-[40px] border-[2px] border-l-[0px] rounded-md">
-                      <p class="before:content-['+'] before:text-black-500"></p>
-                    </button></span>
+                <ul
+                  class="absolute block z-50 bg-gray-300 top-[50px] w-full hidden"
+                  id="onlineShopAside"
+                >
+                  <li class="h-[40px] text-[18px] p-2">
+                    <a href="./onlineShop.html">花朵商品</a>
+                  </li>
+                  <li class="h-[50px] text-[18px] p-2">
+                    <a href="./onlineShopFlowerBasket.html">花籃商品</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex flex-col lg:flex-row space-x-3">
+                <div class="h-[500px] lg:w-1/2 border-2">
+                  <img src="./image/prunus_mumejpg.jpg" class="h-full" />
+                </div>
+                <div class="lg:w-1/2">
+                  <div class="text-[25px] font-bold">梅花</div>
+                  <div class="text-[20px] mt-[20px] border-b-2 pb-[20px]">
+                    疏影橫斜水清淺，暗香浮動月黃昏。
+                  </div>
+                  <div class="text-[40px] text-red-600 p-3">$10</div>
+                  <div class="mt-[20px]">購買數量</div>
+                  <div class="mt-[10px]">
+                    <span
+                      ><button
+                        type="button"
+                        class="w-[45px] h-[40px] border-[2px] border-r-[0px] rounded-md"
+                      >
+                        <i
+                          class="before:content-['-'] before:text-black-500 mt-5"
+                        ></i></button
+                    ></span>
+                    <input
+                      type="number"
+                      value="1"
+                      data-max="100"
+                      class="border-2 w-1/3 mx-[-8px] p-[6px] pl-[15px] font-bold"
+                    />
+                    <span
+                      ><button
+                        type="button"
+                        class="w-[45px] h-[40px] border-[2px] border-l-[0px] rounded-md"
+                      >
+                        <p
+                          class="before:content-['+'] before:text-black-500"
+                        ></p></button
+                    ></span>
+                  </div>
+                  <div class="flex flex-row [30px] mt-[100px] space-x-3">
+                    <button type="button" class="w-2/5 h-[50px] border-2 rounded-md bg-pink-200 hover:bg-gray-300">加入購物車</button>
+                    <button type="button" class="w-2/5 border-2 rounded-md bg-pink-200 hover:bg-gray-300">立即買</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <footer class="bg-pink-400">
-      <div class="container mx-auto lg:h-[260px] pt-[30px]">
-        <div class="flex flex-col md:flex-row w-full">
-          <div class="font-bold text-white w-1/2 mx-3">
-            <p>美麗國際花店</p>
-            <hr class="w-1/2 my-2" />
-            <div class="">
-              <ul class="space-y-3">
-                <li class="flex flex-row">
-                  <img src="./image/address.jpg" alt="" class="h-[20px] pl-[3px] pr-[6px]" />台北市
-                </li>
-                <li class="flex flex-row">
-                  <img src="./image/phone.jpg" alt="" class="h-[20px] pr-[3px]" />02-2222-5555
-                </li>
-                <li class="flex flex-row">
-                  <img src="./image/email.jpg" alt="" class="h-[20px] pr-[3px]" />may12354@gmail.com
-                </li>
-                <li class="flex flex-row">
-                  <img src="./image/opentime.jpg" alt="" class="h-[20px] pr-[3px]" />星期一至星期六 11:00 – 18:00
-                </li>
-              </ul>
+      </section>
+      <footer class="bg-pink-400">
+        <div class="container mx-auto lg:h-[260px] pt-[30px]">
+          <div class="flex flex-col md:flex-row w-full">
+            <div class="font-bold text-white w-1/2 mx-3">
+              <p>美麗國際花店</p>
+              <hr class="w-1/2 my-2" />
+              <div class="">
+                <ul class="space-y-3">
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/address.jpg"
+                      alt=""
+                      class="h-[20px] pl-[3px] pr-[6px]"
+                    />台北市
+                  </li>
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/phone.jpg"
+                      alt=""
+                      class="h-[20px] pr-[3px]"
+                    />02-2222-5555
+                  </li>
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/email.jpg"
+                      alt=""
+                      class="h-[20px] pr-[3px]"
+                    />may12354@gmail.com
+                  </li>
+                  <li class="flex flex-row">
+                    <img
+                      src="./image/opentime.jpg"
+                      alt=""
+                      class="h-[20px] pr-[3px]"
+                    />星期一至星期六 11:00 – 18:00
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="font-bold text-white w-1/2 mx-3">
+              <p>好友分享</p>
+              <hr class="w-1/2 my-2" />
             </div>
           </div>
-          <div class="font-bold text-white w-1/2 mx-3 ">
-            <p>好友分享</p>
-            <hr class="w-1/2 my-2" />
-          </div>
+          <div class="text-center text-white">Copyright ©2024</div>
         </div>
-        <div class="text-center text-white ">Copyright ©2024</div>
-      </div>
-    </footer>
-  </div>
-  <script>
-    let menuToggle = document.getElementById("toggle");
-    let switchMenu = document.getElementById("switchMenu");
-    let closeMenu = document.getElementById("close")
+      </footer>
+    </div>
+    <script>
+      let menuToggle = document.getElementById("toggle");
+      let switchMenu = document.getElementById("switchMenu");
+      let closeMenu = document.getElementById("close");
 
-    menuToggle.addEventListener("click", () => {
-      switchMenu.classList.toggle("hidden");
-    });
-    closeMenu.addEventListener("click", () => {
-      switchMenu.classList.toggle("hidden");
-    });
+      menuToggle.addEventListener("click", () => {
+        switchMenu.classList.toggle("hidden");
+      });
+      closeMenu.addEventListener("click", () => {
+        switchMenu.classList.toggle("hidden");
+      });
 
-  </script>
-</body>
+      let onlineShopToggle = document.getElementById("onlineShopToggle");
+      let onlineShopAside = document.getElementById("onlineShopAside");
 
+      onlineShopToggle.addEventListener("click", () => {
+        onlineShopAside.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>

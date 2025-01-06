@@ -87,7 +87,7 @@
       </a>
       <span class="fixed flex justify-center right-[5px] bottom-[150px] w-[15px] h-[20px]">0</span>
     </div>
-    <section class="mt-[60px] mb-[100px]">
+    <section class="mt-[60px] mb-[100px] mx-[30px]">
       <div class="container mx-auto">
         <div class="flex flex-row justify-between pb-[5px] border-b-2">
           <p class="text-[30px]">會員管理</p>
@@ -109,15 +109,15 @@
             </button>
           </div>
         </div>
-        <div class="container">
+        <div class="">
           <form action="" method="post">
-            <div class="flex flex-row justify-stretch">
-              <div class="text-[15px] mx-auto">
+            <div class="flex flex-col lg:flex-row justify-stretch">
+              <div class="text-[15px] lg:w-1/2 lg:mr-[80px]">
                 <div class="py-3">
                   <label for="email"
                     class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">會員帳號</label>
                   <div class="py-3 tracking-widest">
-                    <input class="rounded border-2 h-[50px] w-[500px] pl-[5px]" autocomplete="off" type="text"
+                    <input class="rounded border-2 h-[50px] w-full pl-[5px]" autocomplete="off" type="text"
                       id="email" maxlength="60" placeholder="請輸入E-MAIL" required />
                   </div>
                 </div>
@@ -125,7 +125,7 @@
                   <label for="password"
                     class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">密碼</label>
                   <div class="py-3">
-                    <input class="rounded border-2 h-[50px] w-[500px] pl-[5px] tracking-widest" autocomplete="off"
+                    <input class="rounded border-2 h-[50px] w-full pl-[5px] tracking-widest" autocomplete="off"
                       type="password" id="password" maxlength="50" size="20" placeholder="請輸入(6~10個英文或數字半形字元)"
                       id="password" value required />
                   </div>
@@ -135,7 +135,7 @@
                   <label for="passwordChk"
                     class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">密碼確認</label>
                   <div class="py-3">
-                    <input class="rounded border-2 h-[50px] w-[500px] pl-[5px] tracking-widest" autocomplete="off"
+                    <input class="rounded border-2 h-[50px] w-full pl-[5px] tracking-widest" autocomplete="off"
                       type="password" maxlength="50" size="20" placeholder="請輸入(6~10個英文或數字半形字元)" id="passwordChk" value
                       required />
                   </div>
@@ -143,7 +143,7 @@
                 <div class="py-3">
                   <label for="name" class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">中文全名</label>
                   <div class="py-3 tracking-widest">
-                    <input class="rounded border-2 h-[50px] w-[500px] pl-[5px]" autocomplete="off" type="text" id="name"
+                    <input class="rounded border-2 h-[50px] w-full pl-[5px]" autocomplete="off" type="text" id="name"
                       maxlength="20" size="20" value required />
                   </div>
                 </div>
@@ -165,18 +165,18 @@
                   </div>
                 </div>
               </div>
-              <div class="mx-auto">
-                <div class="py-3">
+              <div class="lg:w-1/2">
+                <div class="py-3 ">
                   <label for="tel" class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">連絡電話 </label>
                   <div class="py-3 tracking-widest">
-                    <input class="rounded border-2 h-[50px] w-[500px] pl-[5px]" autocomplete="off" type="tel" id="tel"
+                    <input class="rounded border-2 h-[50px] w-full pl-[5px]" autocomplete="off" type="tel" id="tel"
                       maxlength="20" size="20" placeholder="ex:0912345678" value required />
                   </div>
                 </div>
-                <div class="py-3">
+                <div class="py-3 ">
                   <label for="city" class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">聯絡地址</label>
-                  <div class="flex flex-row">
-                    <div class="tracking-widest border-2 h-[50px] w-1/2 mr-2 ">
+                  <div class="flex flex-row ">
+                    <div class="tracking-widest border-2 h-[50px] w-full mr-2 ">
                       <select name="city" id="city" class="w-full h-full">
                         <option value="">選縣市</option>
                         <option value="基隆市">基隆市</option>
@@ -211,15 +211,15 @@
                     </div>
                   </div>
                   <div class="mt-[10px]">
-                    <textarea name="" rows="2" id="address" class="border-2 w-[500px] h-[160px] p-2"
+                    <textarea name="" rows="2" id="address" class="border-2 w-2/3 h-[160px] p-2"
                       required></textarea>
                   </div>
                 </div>
-                <div class="py-3">
+                <div class="py-3 ">
                   <label for="date"
                     class="text-[25px] after:content-['*'] after:ml-0.5 after:text-red-500">生日(西元)</label>
                   <div>
-                    <input type="date" name="date" id="date" class="rounded border-2 h-[50px] p-2 w-[500px]" />
+                    <input type="date" name="date" id="date" class="rounded border-2 h-[50px] p-2 w-full" />
                   </div>
                 </div>
                 <div class="py-3">
